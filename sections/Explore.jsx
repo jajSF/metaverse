@@ -8,6 +8,8 @@ import { TypingText, ExploreCard, TitleText } from "../components";
 import { exploreWorlds } from "../constants/index";
 
 const Explore = () => {
+  const [active, setActive] = useState("world-2");
+
   return (
     <section className={`${styles.paddings}`} id="explore">
       <motion.div
@@ -27,8 +29,18 @@ const Explore = () => {
           }
           textStyles="text-center"
         />
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+          {exploreWorlds.map((world, index) => (
+            <ExploreCard
+              key={world.id}
+              {...world}
+              active={active}
+              handleClick={setActive}
+              index={index}
+            />
+          ))}
+        </div>
       </motion.div>
-      Explore section
     </section>
   );
 };
