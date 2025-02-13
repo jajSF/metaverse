@@ -18,7 +18,8 @@ const Page = () => (
     <World />
     <div className='relative'>
       <Insights />
-      <div className='gradient-04 z-0'/>
+      <div className='gradient-002 z-0 animate-slowMove'/>
+      <div className='gradient-04 z-0 animate-slowMove'/>
       <Feedback />
     </div>
     <Footer />

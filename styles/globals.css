@@ -45,6 +45,17 @@
   filter: blur(190px);
 }
 
+.gradient-002 {
+  position: absolute;
+  width: 200px;
+  height: 500px;
+  top: 300px;
+  right: 0px;
+
+  background: #5e8ae1 url("/public/noise.svg");
+  filter: blur(190px);
+}
+
 .glassmorphism {
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
