@@ -34,7 +34,7 @@ module.exports = {
       },
       animation: {
         slowMove: 'moveGradient 10s ease-in-out infinite',
-        slowMoveX: 'moveGradientX 10s ease-in-out infinite'
+        slowMoveX: 'moveGradientX 30s ease-in-out infinite'
       }
     },
   },
