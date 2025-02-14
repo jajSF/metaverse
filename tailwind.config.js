@@ -26,15 +26,20 @@ module.exports = {
         },
         moveGradientX: {
           '0%': {transform: 'translateX(0)'},
-          '25%':{transform: 'translateY(50%)'},
-          '50%': {transform: 'translateY(0)'},
-          '75%': {transform: 'translateX(50%)'},
+          '25%': {transform: 'translateX(-50%)'},
+          '50%': {transform: 'translateY(-50%)'},
+          '75%': {transform: 'translateY(-150%)'},
           '100%': {transform: 'translateX(0)'},
+        },
+        rotateGradient: {
+          '0%': {transform: 'rotate(0deg)'},
+          '100%': {transform: 'rotate(360deg)'},
         }
       },
       animation: {
         slowMove: 'moveGradient 10s ease-in-out infinite',
-        slowMoveX: 'moveGradientX 30s ease-in-out infinite'
+        slowMoveX: 'moveGradientX 20s ease-in infinite',
+        rotate: 'rotateGradient 10s linear inifinte'
       }
     },
   },
